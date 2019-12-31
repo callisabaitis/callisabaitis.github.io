@@ -44,6 +44,92 @@
   <table padding="5px">
     <tr class="title">
       <td colspan="2">
+        <b>Education</b>
+      </td>
+      <td></td>
+    </tr>
+    <!-- <tr class="title">
+      <td colspan="2">
+        <b>Education</b>
+      </td>
+      <td></td>
+    </tr> -->
+    <tr>
+      <td align="center">
+        <button>
+          <img src="images/cornellLogo.png" class="resumePics" id="myBtn10"></img>
+        </button>
+        <div id="myModal10" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              Cornell University
+            </div>
+            <div class="modal-body">
+              The College of Arts & Sciences</br>
+              Bachelor of Arts</br>
+              Double Major in Mathematics and Computer Science</br>
+              Expected Gradiation in May of 2022</br>
+            </div>
+            <div class="modal-footer">
+              <a href="https://as.cornell.edu">https://as.cornell.edu</a>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td align="center">
+        <button>
+          <img src="images/mathCourses.jpg" class="resumePics" id="myBtn11"></img>
+        </button>
+        <div id="myModal11" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              Related Courses in Mathematics
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>Math 3110: Introduction to Analysis, Spring 2020</li>
+                <li>Math 3320: Introduction to Number Theory, Fall 2019</li>
+                <li>Math 2210: Linear Algebra, Spring 2019</li>
+                <li>Math 2220: Multivariable Calculus, Fall 2018</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <a href="https://math.cornell.edu">https://math.cornell.edu</a>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td align="center">
+        <button>
+          <img src="images/csCourses.jpg" class="resumePics" id="myBtn12"></img>
+        </button>
+        <div id="myModal12" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              Related Courses in Computer Science
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>CS 3410: Systems Programming, Spring 2020</li>
+                <li>CS 3110: Data Structures and Functional Programming (OCaml), Fall 2019</li>
+                <li>CS 1998: Introduction to iOS App Development (Swift), Fall 2019</li>
+                <li>CS 2800: Discrete Structurees, Spring 2019</li>
+                <li>CS 2110: Object-Oriented Programming and Data Structures (Java), Spring 2019</li>
+                <li>CS 1110: Introduction to Computing (Python), Fall 2018</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.cs.cornell.edu">https://www.cs.cornell.edu</a>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr class="title">
+      <td colspan="2">
         <b>Experience</b>
       </td>
       <td></td>
@@ -76,13 +162,10 @@
         </div>
       </td>
       <td align="center">
-        <!-- Trigger/Open The Modal -->
         <button>
           <img src="images/patcLogo.jpg" class="resumePics" id="myBtn2"></img>
         </button>
-        <!-- The Modal -->
         <div id="myModal2" class="modal">
-          <!-- Modal content -->
           <div class="modal-content">
             <div class="modal-header">
               <span class="close">&times;</span>
@@ -107,13 +190,10 @@
         </div>
       </td>
       <td align="center">
-        <!-- Trigger/Open The Modal -->
         <button>
           <img src="images/idTechLogo.jpg" class="resumePics" id="myBtn3"></img>
         </button>
-        <!-- The Modal -->
         <div id="myModal3" class="modal">
-          <!-- Modal content -->
           <div class="modal-content">
             <div class="modal-header">
               <span class="close">&times;</span>
@@ -334,6 +414,9 @@
     var modal7 = document.getElementById("myModal7");
     var modal8 = document.getElementById("myModal8");
     var modal9 = document.getElementById("myModal9");
+    var modal10 = document.getElementById("myModal10");
+    var modal11 = document.getElementById("myModal11");
+    var modal12 = document.getElementById("myModal12");
 
     // Get the button that opens the modal
     var btn1 = document.getElementById("myBtn1");
@@ -345,17 +428,24 @@
     var btn7 = document.getElementById("myBtn7");
     var btn8 = document.getElementById("myBtn8");
     var btn9 = document.getElementById("myBtn9");
+    var btn10 = document.getElementById("myBtn10");
+    var btn11 = document.getElementById("myBtn11");
+    var btn12 = document.getElementById("myBtn12");
 
     // Get the <span> element that closes the modal
-    var span1 = document.getElementsByClassName("close")[0];
-    var span2 = document.getElementsByClassName("close")[1];
-    var span3 = document.getElementsByClassName("close")[2];
-    var span4 = document.getElementsByClassName("close")[3];
-    var span5 = document.getElementsByClassName("close")[4];
-    var span6 = document.getElementsByClassName("close")[5];
-    var span7 = document.getElementsByClassName("close")[6];
-    var span8 = document.getElementsByClassName("close")[7];
-    var span9 = document.getElementsByClassName("close")[8];
+    var span10 = document.getElementsByClassName("close")[0];
+    var span11 = document.getElementsByClassName("close")[1];
+    var span12 = document.getElementsByClassName("close")[2];
+    var span1 = document.getElementsByClassName("close")[3];
+    var span2 = document.getElementsByClassName("close")[4];
+    var span3 = document.getElementsByClassName("close")[5];
+    var span4 = document.getElementsByClassName("close")[6];
+    var span5 = document.getElementsByClassName("close")[7];
+    var span6 = document.getElementsByClassName("close")[8];
+    var span7 = document.getElementsByClassName("close")[9];
+    var span8 = document.getElementsByClassName("close")[10];
+    var span9 = document.getElementsByClassName("close")[11];
+
 
     // When the user clicks on the button, open the modal 
     btn1.onclick = function () {
@@ -384,6 +474,15 @@
     }
     btn9.onclick = function () {
       modal9.style.display = "block";
+    }
+    btn10.onclick = function () {
+      modal10.style.display = "block";
+    }
+    btn11.onclick = function () {
+      modal11.style.display = "block";
+    }
+    btn12.onclick = function () {
+      modal12.style.display = "block";
     }
 
     // When the user clicks on <span> (x), close the modal
@@ -423,6 +522,18 @@
       modal9.style.display = "none";
       modal9.style.display = "none";
     }
+    span10.onclick = function () {
+      modal10.style.display = "none";
+      modal10.style.display = "none";
+    }
+    span11.onclick = function () {
+      modal11.style.display = "none";
+      modal11.style.display = "none";
+    }
+    span12.onclick = function () {
+      modal12.style.display = "none";
+      modal12.style.display = "none";
+    }
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
@@ -444,6 +555,12 @@
         modal8.style.display = "none";
       } if (event.target == modal9) {
         modal9.style.display = "none";
+      } if (event.target == modal10) {
+        modal10.style.display = "none";
+      } if (event.target == modal11) {
+        modal11.style.display = "none";
+      } if (event.target == modal12) {
+        modal12.style.display = "none";
       }
     }
   </script>
