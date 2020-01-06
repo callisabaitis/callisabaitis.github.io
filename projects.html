@@ -1,3 +1,8 @@
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://semantic-ui.com/dist/semantic.min.js"></script>
+
+
 <!doctype html>
 <html lang="en-US">
 
@@ -13,7 +18,7 @@
 			<td>
 				<left>
 					<div class="name">
-						<a href="index.html">Calli Sabaitis</a>
+						<a href="index.html">Catharine Sabaitis</a>
 					</div>
 				</left>
 			</td>
@@ -35,9 +40,77 @@
 	</table>
 </header>
 
-<body class="comingSoon">
-	<br><br><br><br>
-	Coming Soon!
+<body>
+	<table padding="5px">
+		<tr class="title">
+			<td colspan="2">
+				<b>Projects</b>
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td align="center">
+				<button>
+					<!-- <div class="container">
+						<div class="projectsPic1" id="myBtn1">&times;</div>
+					</div> -->
+					<!-- <img src="images/beachBackground.jpeg" class="projectsPic1" id="myBtn1"></img> -->
+					<img src="images/alienInvaders.png" class="resumePics" id="myBtn1"></img>
+				</button>
+				<div id="myModal1" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+							<span class="close">&times;</span>
+							Alien Invaders
+						</div>
+						<div class="modal-body">
+							<b>Language:</b> Python</br>
+							<b>Completed:</b> Fall 2018</br>
+							<b>Class:</b> CS 1110: Introduction to Computing</br>
+							<b>Description:</b> </br>
+							We created the game Align Invaders based on the game Space Invaders using a GUI. The
+							user was able to move their ship, shoot the aligns, and continue to higher levels. The aliens shot back
+							and the score was recorded for every alien strike.
+						</div>
+						<div class="modal-footer">
+							<!-- Link on GitHub: <a href="https://as.cornell.edu">https://as.cornell.edu</a> -->
+						</div>
+					</div>
+				</div>
+				</div>
+			</td>
+			<td align="center">
+
+			</td>
+			<td align="center">
+
+			</td>
+		</tr>
+	</table>
+
+	<script>
+		var modal1 = document.getElementById("myModal1");
+
+		var btn1 = document.getElementById("myBtn1");
+
+		var span1 = document.getElementsByClassName("close")[0];
+
+		btn1.onclick = function () {
+			modal1.style.display = "block";
+		}
+
+		span1.onclick = function () {
+			modal1.style.display = "none";
+			modal1.style.display = "none";
+		}
+
+		window.onclick = function (event) {
+			if (event.target == modal1) {
+				modal1.style.display = "none";
+			}
+		}
+	</script>
+
 </body>
 
 </html>
