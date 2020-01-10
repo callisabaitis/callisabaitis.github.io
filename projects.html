@@ -139,8 +139,32 @@
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<!-- gpa calculator app -->
+			<td align="center">
+				<button>
+					<img src="images/gpaCalculatorApp.jpg" class="resumePics" id="myBtn4"></img>
+				</button>
+				<div id="myModal4" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+							<div align="right">
+								<span class="close4">&times;</span></br>
+							</div>
+							GPA Calculator App
+						</div>
+						<div class="modal-body">
+							<b>Language:</b> Swift</br>
+							<b>Completed:</b> In Progress</br>
+							<b>Description:</b> </br>
+							I created a GPA Calculator App to practice using Swift to solve a problem. The app calcualtes your current
+							GPA on a 4.0 scale, the same scale that Cornell uses. As a user, you can add and delete classes from the
+							app.
+						</div>
+						<div class="modal-footer">
+							Link on GitHub: <a
+								href="https://github.com/callisabaitis/gpaCalculatorApp">https://github.com/callisabaitis/gpaCalculatorApp</a>
+						</div>
+					</div>
+				</div>
 			</td>
 			<td>
 
@@ -155,14 +179,17 @@
 		var modal1 = document.getElementById("myModal1");
 		var modal2 = document.getElementById("myModal2");
 		var modal3 = document.getElementById("myModal3");
+		var modal4 = document.getElementById("myModal4");
 
 		var btn1 = document.getElementById("myBtn1");
 		var btn2 = document.getElementById("myBtn2");
 		var btn3 = document.getElementById("myBtn3");
+		var btn4 = document.getElementById("myBtn4");
 
 		var span1 = document.getElementsByClassName("close1")[0];
 		var span2 = document.getElementsByClassName("close2")[0];
 		var span3 = document.getElementsByClassName("close3")[0];
+		var span4 = document.getElementsByClassName("close4")[0];
 
 		btn1.onclick = function () {
 			modal1.style.display = "block";
@@ -172,6 +199,9 @@
 		}
 		btn3.onclick = function () {
 			modal3.style.display = "block";
+		}
+		btn4.onclick = function () {
+			modal4.style.display = "block";
 		}
 
 		span1.onclick = function () {
@@ -186,6 +216,10 @@
 			modal3.style.display = "none";
 			modal3.style.display = "none";
 		}
+		span4.onclick = function () {
+			modal4.style.display = "none";
+			modal4.style.display = "none";
+		}
 
 		window.onclick = function (event) {
 			if (event.target == modal1) {
@@ -194,6 +228,8 @@
 				modal2.style.display = "none";
 			} if (event.target == modal3) {
 				modal3.style.display = "none";
+			} if (event.target == modal4) {
+				modal4.style.display = "none";
 			}
 		}
 	</script>
