@@ -130,6 +130,28 @@
     </tr>
     <tr>
       <td align="center">
+        <button>
+          <img src="images/bauHausLabs.png" class="resumePics" id="myBtn13"></img>
+        </button>
+        <div id="myModal13" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              BauHaus Labs
+            </div>
+            <div class="modal-body">
+              <b>Title:</b> &nbsp;Backend Software Developper </br>
+              <b>Location:</b> &nbsp;New York, New York</br>
+              <b>Duration:</b> &nbsp;March 2020 - Present</br>
+              <!-- <b>Responsibilities:</b> </br> -->
+            </div>
+            <div class="modal-footer">
+              <a href="https://bauhauslabs.com">https://bauhauslabs.com</a>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td align="center">
         <!-- Trigger/Open The Modal -->
         <button>
           <img src="images/cs3110logo.jpg" class="resumePics" id="myBtn1"></img>
@@ -146,7 +168,7 @@
               <b>Title:</b> &nbsp;Course Consultant</br>
               <b>Location:</b> &nbsp;Ithaca, NY</br>
               <b>Duration:</b> &nbsp;January 2020 - Present</br>
-              <b>Responsibilities:</b> </br>
+              <!-- <b>Responsibilities:</b> </br> -->
             </div>
             <div class="modal-footer">
               <a
@@ -183,6 +205,8 @@
           </div>
         </div>
       </td>
+    </tr>
+    <tr>
       <td align="center">
         <button>
           <img src="images/idTechLogo.jpg" class="resumePics" id="myBtn3"></img>
@@ -209,8 +233,6 @@
           </div>
         </div>
       </td>
-    </tr>
-    <tr>
       <td align="center">
         <button>
           <img src="images/fahertyLogo.jpg" class="resumePics" id="myBtn4"></img>
@@ -265,9 +287,6 @@
             </div>
           </div>
         </div>
-      </td>
-      <td>
-
       </td>
     </tr>
   </table>
@@ -411,6 +430,7 @@
     var modal10 = document.getElementById("myModal10");
     var modal11 = document.getElementById("myModal11");
     var modal12 = document.getElementById("myModal12");
+    var modal13 = document.getElementById("myModal13");
 
     // Get the button that opens the modal
     var btn1 = document.getElementById("myBtn1");
@@ -425,20 +445,22 @@
     var btn10 = document.getElementById("myBtn10");
     var btn11 = document.getElementById("myBtn11");
     var btn12 = document.getElementById("myBtn12");
+    var btn13 = document.getElementById("myBtn13");
 
     // Get the <span> element that closes the modal
     var span10 = document.getElementsByClassName("close")[0];
     var span11 = document.getElementsByClassName("close")[1];
     var span12 = document.getElementsByClassName("close")[2];
-    var span1 = document.getElementsByClassName("close")[3];
-    var span2 = document.getElementsByClassName("close")[4];
-    var span3 = document.getElementsByClassName("close")[5];
-    var span4 = document.getElementsByClassName("close")[6];
-    var span5 = document.getElementsByClassName("close")[7];
-    var span6 = document.getElementsByClassName("close")[8];
-    var span7 = document.getElementsByClassName("close")[9];
-    var span8 = document.getElementsByClassName("close")[10];
-    var span9 = document.getElementsByClassName("close")[11];
+    var span1 = document.getElementsByClassName("close")[4];
+    var span2 = document.getElementsByClassName("close")[5];
+    var span3 = document.getElementsByClassName("close")[6];
+    var span4 = document.getElementsByClassName("close")[7];
+    var span5 = document.getElementsByClassName("close")[8];
+    var span6 = document.getElementsByClassName("close")[9];
+    var span7 = document.getElementsByClassName("close")[10];
+    var span8 = document.getElementsByClassName("close")[11];
+    var span9 = document.getElementsByClassName("close")[12];
+    var span13 = document.getElementsByClassName("close")[3];
 
 
     // When the user clicks on the button, open the modal 
@@ -477,6 +499,9 @@
     }
     btn12.onclick = function () {
       modal12.style.display = "block";
+    }
+    btn13.onclick = function () {
+      modal13.style.display = "block";
     }
 
     // When the user clicks on <span> (x), close the modal
@@ -528,6 +553,10 @@
       modal12.style.display = "none";
       modal12.style.display = "none";
     }
+    span13.onclick = function () {
+      modal13.style.display = "none";
+      modal13.style.display = "none";
+    }
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
@@ -555,6 +584,8 @@
         modal11.style.display = "none";
       } if (event.target == modal12) {
         modal12.style.display = "none";
+      } if (event.target == modal13) {
+        modal13.style.display = "none";
       }
     }
   </script>
