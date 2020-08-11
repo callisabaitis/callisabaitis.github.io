@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+/* background */
+.flex { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.bkgrndColor {
+  background: rgb(128, 216, 228);
+} 
+
+/* title */
+h1 {
+  font-weight:30;
+  letter-spacing: 3px;
+  font-size:60px;
+  font-family: 'Courier New';
+  /* color:white; */
+}
+.header {
+  position:relative;
+  text-align:center;
+  color:white;
+}
+.inner-header {
+  height:15vh;
+}
+
+/* section titles */
+.sectionTitle {
+  position:relative;
+  font-family: 'Courier New';
+  color: rgb(128, 216, 228);
+  text-align: center;
+  font-size: 60px;
+  font-weight:30;
+}
+
+/* links */
+a:hover {
+	text-decoration: none;
+} 
+a:link, a:visited {
+  text-decoration: none;
+  color:white;
+}
+.myLinks {
+  font-family: 'Courier New';
+  text-align: center;
+  font-size: 30px;
+  /* color: white; */
+  height: 50vh;
+}
+
+/* Text */
+body {
+  margin: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+/* ul {
+  font-size: 15px;
+} */
+.parText {
+  margin: 0;
+  color: rgb(128, 216, 228);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  font-size: 30px;
+  font-family: 'Courier New';
+  padding: 50px;
+}
+
+/* table */
+th, td {
+  padding: 5px;
+  height: 50px;
+}
+table {
+  table-layout : fixed;
+  width: 100%;
+  text-align: center;
+  vertical-align: center;
+}
+
+/* contact pics */
+.contactPics {
+	width: 50px;
+	height: 50px;
+}
+.contactPics:hover {
+	width: 50px;
+	height: 50px;
+	opacity: .5;
+ }
+
+/* waves */
+.waves {
+  position:relative;
+  width: 100%;
+  height:10vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+.container {
+  max-width: 1376px;
+  margin: auto;
+  padding: 2rem 1.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  cursor: pointer;
+  background-color: transparent;
+  height: 300px;
+  perspective: 1000px;
+  margin: 1rem;
+}
+
+.card h3 {
+  border-bottom: 1px #fff solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.6rem;
+  word-spacing: 3px;
+}
+
+.card p{
+  opacity: 0.75;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.card img {
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.card-inner {
+  position: relative;
+  width: 360px;
+  height: 100%;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 360px;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow-y: auto;
+}
+
+.card-back {
+  background-color: rgb(128, 216, 228);
+  color: #fff;
+  padding: 1.5rem;
+  transform: rotateY(180deg);
+}

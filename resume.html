@@ -1,87 +1,65 @@
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script src="https://semantic-ui.com/dist/semantic.min.js"></script>
-
-
 <!doctype html>
 <html lang="en-US">
+<!-- wave css credit to Daniel Österman -->
+<!-- cards credit to Emre Süslü -->
 
 <head>
-  <title>Resume</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Catharine Sabaitis - Resume</title>
+  <link rel="stylesheet" href="cards.css">
 </head>
 
-<header>
-  <table>
-    <tr>
-      <td>
-        <left>
-          <div class="name">
-            <a href="index.html">Catharine Sabaitis</a>
-          </div>
-        </left>
-      </td>
+<div class="header">
+  <div class="bkgrndColor">
 
-      <td>
-        <table>
-          <right>
-            <tr>
-              <td><a href="about.html">about</a></td>
-              <td><a href="projects.html">projects</a></td>
-              <td><a href="resume.html">resume</a></td>
-              <td><a href="contact.html">contact</a></td>
-            </tr>
-          </right>
-        </table>
-      </td>
+    <div class="inner-header flex">
+      <h1><a href="index.html" color="white">Catharine Sabaitis</a></h1>
+    </div>
 
-    </tr>
-  </table>
-</header>
+    <div class="flex">
+      <table>
+        <center>
+          <tr>
+            <td><a href="about.html" class="myLinks">about</a></td>
+            <!-- <td><a href="projects.html" class="myLinks">projects</a></td> -->
+            <td><a href="resume.html" class="myLinks">resume</a></td>
+            <td><a href="contact.html" class="myLinks">contact</a></td>
+          </tr>
+        </center>
+      </table>
+    </div>
 
+    <!--Waves Container-->
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+    <!--Waves end-->
+  </div>
 
-<body>
-  <table padding="5px">
-    <tr class="title">
-      <td colspan="2">
-        <b>Education</b>
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td align="center">
-        <button>
-          <img src="images/cornellLogo.png" class="resumePics" id="myBtn10"></img>
-        </button>
-        <div id="myModal10" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              Cornell University
+  <body>
+
+    <div class="sectionTitle">
+      Education
+    </div>
+    <div class="container">
+      <div class="cards">
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/mathCourses.jpg" alt="">
             </div>
-            <div class="modal-body">
-              The College of Arts & Sciences</br>
-              Bachelor of Arts</br>
-              Double Major in Mathematics and Computer Science</br>
-              Expected Gradiation in May of 2022</br>
-            </div>
-            <div class="modal-footer">
-              <a href="https://as.cornell.edu">https://as.cornell.edu</a>
-            </div>
-          </div>
-        </div>
-      </td>
-      <td align="center">
-        <button>
-          <img src="images/mathCourses.jpg" class="resumePics" id="myBtn11"></img>
-        </button>
-        <div id="myModal11" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              Related Courses in Mathematics
-            </div>
-            <div class="modal-body">
+            <div class="card-back">
+              <h3>Related Courses in Mathematics</h3>
               <ul>
                 <li>Math 3110: Introduction to Analysis, Spring 2020</li>
                 <li>Math 3320: Introduction to Number Theory, Fall 2019</li>
@@ -89,23 +67,28 @@
                 <li>Math 2220: Multivariable Calculus, Fall 2018</li>
               </ul>
             </div>
-            <div class="modal-footer">
-              <a href="https://math.cornell.edu">https://math.cornell.edu</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/cornellLogo.png" alt="">
+            </div>
+            <div class="card-back">
+              <h3>Cornell University</h3>
+              The College of Arts & Sciences</br>
+              Bachelor of Arts, Expected May 2022</br>
+              Double Major in Mathematics and Computer Science</br>
             </div>
           </div>
         </div>
-      </td>
-      <td align="center">
-        <button>
-          <img src="images/csCourses.jpg" class="resumePics" id="myBtn12"></img>
-        </button>
-        <div id="myModal12" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              Related Courses in Computer Science
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/csCourses.jpg" alt="">
             </div>
-            <div class="modal-body">
+            <div class="card-back">
+              <h3>Related Courses in Computer Science</h3>
               <ul>
                 <li>CS 3410: Systems Programming, Spring 2020</li>
                 <li>CS 3110: Data Structures and Functional Programming (OCaml), Fall 2019</li>
@@ -115,481 +98,99 @@
                 <li>CS 1110: Introduction to Computing (Python), Fall 2018</li>
               </ul>
             </div>
-            <div class="modal-footer">
-              <a href="https://www.cs.cornell.edu">https://www.cs.cornell.edu</a>
+          </div>
+        </div>
+      </div>
+      </br></br>
+      <div class="sectionTitle">
+        Work Experience
+      </div>
+      <div class="container">
+        <div class="cards">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="images/bauhaus.png" alt="">
+              </div>
+              <div class="card-back">
+                <h3>Full Stack Developper, Bauhaus Labs</h3>
+                <ul>
+                  <li>Implemented OAuth flow for users wishing to link their account data with another site's</li>
+                  <li>Adapted lengthy tasks, such as Twilio broadcasts and CSV file uploads, to follow an asynchronous
+                    flow to save users time using Celery</li>
+                  <li>Built a tool that converts files between CSV and JSON formats, confirms the data for each column
+                    in the Postgres database, and uploads the data into a new table on the database</li>
+                  <li>Created personalized Signed URLs for users to upload files to the Google Cloud Platform securely
+                  </li>
+                </ul>
+                <a href="https://bauhauslabs.com">https://bauhauslabs.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="images/way.png" alt="">
+              </div>
+              <div class="card-back">
+                <h3>Backend Developper, WAY</h3>
+                <ul>
+                  <li>Used Amazon's SNS feature to implement text notifications for order status updates, including
+                    confirming payment and placement, order completion, and order cancellation confirmation messages
+                  </li>
+                  <li>Compiled and wrote unit tests for the entire platform using Python's Mock Object Library</li>
+                  <li>Integrated Stripe functionalities to distribute tips between WAY and vendors and to charge monthly
+                    fees to vendors in the Ordering Microservice</li>
+                </ul>
+                <a href="https://www.paywithway.com">https://www.paywithway.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="images/cs3110.png" alt="">
+              </div>
+              <div class="card-back">
+                <h3>Teaching Assistant, Data Strutures and Functional Programming (CS 3110)</h3>
+                <ul>
+                  <li>Received TA Award out of a 60-person course staff, Spring 2020</li>
+                  <li>Hold office hours to help students solidify concepts and provide guidance in completing projects
+                  </li>
+                  <li>Give weekly constructive criticism to student's coding style (including documentation
+                    clarification, comments on variable naming convention, and suggestions for overall readability)</li>
+                </ul>
+                <a href="https://www.cs.cornell.edu/courses/cs3110/">https://www.cs.cornell.edu/courses/cs3110/</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="images/idTechLogo.jpg" alt="">
+              </div>
+              <div class="card-back">
+                <h3>Lead Instructor, iD Tech Camps</h3>
+                <ul>
+                  <li>Taught students aged 7 to 17 the fundamentals of computer science in Java, Python, and Scratch
+                  </li>
+                  <li>Created thorough weekly handouts and outlines for student learning enhancement </li>
+                </ul>
+                <a href="https://www.idtech.com">https://www.idtech.com</a>
+              </div>
             </div>
           </div>
         </div>
-      </td>
-    </tr>
-    <tr class="title">
-      <td colspan="2">
-        <b>Experience</b>
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td align="center">
-        <button>
-          <img src="images/bauHausLabs.png" class="resumePics" id="myBtn13"></img>
-        </button>
-        <div id="myModal13" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              BauHaus Labs
-            </div>
-            <div class="modal-body">
-              <b>Title:</b> &nbsp;Backend Software Developper </br>
-              <b>Location:</b> &nbsp;New York, New York</br>
-              <b>Duration:</b> &nbsp;March 2020 - Present</br>
-              <!-- <b>Responsibilities:</b> </br> -->
-            </div>
-            <div class="modal-footer">
-              <a href="https://bauhauslabs.com">https://bauhauslabs.com</a>
-            </div>
-          </div>
-        </div>
-      </td>
-      <td align="center">
-        <!-- Trigger/Open The Modal -->
-        <button>
-          <img src="images/cs3110logo.jpg" class="resumePics" id="myBtn1"></img>
-        </button>
-        <!-- The Modal -->
-        <div id="myModal1" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              Data Structures and Functional Programming (CS 3110)
-            </div>
-            <div class="modal-body">
-              <b>Title:</b> &nbsp;Course Consultant</br>
-              <b>Location:</b> &nbsp;Ithaca, NY</br>
-              <b>Duration:</b> &nbsp;January 2020 - Present</br>
-              <!-- <b>Responsibilities:</b> </br> -->
-            </div>
-            <div class="modal-footer">
-              <a
-                href="https://www.cs.cornell.edu/courses/cs3110/2019fa/">https://www.cs.cornell.edu/courses/cs3110/2019fa/</a>
-            </div>
-          </div>
-        </div>
-      </td>
-      <td align="center">
-        <button>
-          <img src="images/patcLogo.jpg" class="resumePics" id="myBtn2"></img>
-        </button>
-        <div id="myModal2" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              Park Avenue Tennis Center
-            </div>
-            <div class="modal-body">
-              <b>Title:</b> &nbsp;Social Media Director</br>
-              <b>Location:</b> &nbsp;Oakhurst, NJ</br>
-              <b>Duration:</b> &nbsp;May 2018 - December 2019</br>
-              <b>Responsibilities:</b>
-              <ul>
-                <li>Distributed pertinent and recent information through designing email blasts to the PATC Community
-                </li>
-                <li>Edited and scheduled posts to Instagram and Facebook</li>
-                <li>Monitored and updated website information </li>
-              </ul>
-            </div>
-            <div class="modal-footer">
-              <a href="https://www.parkavenuetennis.com">https://www.parkavenuetennis.com</a>
-            </div>
-          </div>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <button>
-          <img src="images/idTechLogo.jpg" class="resumePics" id="myBtn3"></img>
-        </button>
-        <div id="myModal3" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              iD Tech Camps
-            </div>
-            <div class="modal-body">
-              <b>Title:</b> &nbsp;Lead Instructor</br>
-              <b>Location:</b> &nbsp;Monmouth University and Princeton University</br>
-              <b>Duration:</b> &nbsp;June 2019 - August 2019</br>
-              <b>Responsibilities:</b>
-              <ul>
-                <li>Taught students aged 7 to 17 the fundamentals of computer science in Java, Python, and Scratch</li>
-                <li>Created thorough weekly handouts and outlines for student learning enhancement </li>
-              </ul>
-            </div>
-            <div class="modal-footer">
-              <a href="https://www.idtech.com">https://www.idtech.com</a>
-            </div>
-          </div>
-        </div>
-      </td>
-      <td align="center">
-        <button>
-          <img src="images/fahertyLogo.jpg" class="resumePics" id="myBtn4"></img>
-        </button>
-        <div id="myModal4" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              Faherty Brand
-            </div>
-            <div class="modal-body">
-              <b>Title:</b> &nbsp;Spring Intern</br>
-              <b>Location:</b> &nbsp;New York, NY</br>
-              <b>Duration:</b> &nbsp;February 2018 - May 2018</br>
-              <b>Responsibilities:</b>
-              <ul>
-                <li>Documented all previous season catalogs in a spreadsheet, which showcased the large profit items
-                </li>
-                <li>Monitored and updated sale prices on the backend of website and regulated site traffic</li>
-                <li>Organized in-season samples for easy access by designers and customer service specialists</li>
-              </ul>
-            </div>
-            <div class="modal-footer">
-              <a href="https://fahertybrand.com">https://fahertybrand.com</a>
-            </div>
-          </div>
-        </div>
-      </td>
-      <td align="center">
-        <button>
-          <img src="images/beachBackground.jpeg" class="resumePics" id="myBtn5"></img>
-        </button>
-        <div id="myModal5" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              Spring Lake Beach Department
-            </div>
-            <div class="modal-body">
-              <b>Title:</b> &nbsp;Pool Lifeguard ('17 - '18), Beach Badge Seller ('15 - '16), Gate Attendant ('14)</br>
-              <b>Location:</b> &nbsp;Spring Lake, NJ</br>
-              <b>Duration:</b> &nbsp;May 2014 - August 2018</br>
-              <b>Responsibilities:</b>
-              <ul>
-                <li>Ensured all patrons were safe and following pool rules
-                </li>
-                <li>Ensured beach patrons had beach badges; sold daily beach badges to non-local patrons</li>
-              </ul>
-            </div>
-            <div class="modal-footer">
-              <a href="http://springlakeguards.com/guards/">http://springlakeguards.com/guards/</a>
-            </div>
-          </div>
-        </div>
-      </td>
-    </tr>
-  </table>
-  <table padding="5px">
-    <tr class="title">
-      <td colspan="2">
-        <b>Leadership</b>
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td align="center">
-        <button>
-          <img src="images/splashLogo.jpg" class="resumePics" id="myBtn6"></img>
-        </button>
-        <div id="myModal6" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              Splash! at Cornell
-            </div>
-            <div class="modal-body">
-              <b>Position(s):</b> &nbsp;Webmaster (S19-present) and Treasurer(S19-present)</br>
-              <b>Club Member Since:</b> &nbsp;Fall 2018</br>
-              <b>Responsibilities:</b>
-              <ul>
-                <li>Manage all updates to the website and ensure both teacher and student registration runs smoothly t
-                  Interview all prospective teachers for Splash! at Cornell events
-                </li>
-                <li>Ensured beach patrons had beach badges; sold daily beach badges to non-local patrons</li>
-                <li>Submit accurate and complete records of all club expenditures</li>
-                <li>Calculate budget and purchase all goods and services for each event</li>
-              </ul>
-            </div>
-            <div class="modal-footer">
-              <a href="https://cornell.learningu.org">https://cornell.learningu.org</a>
-            </div>
-          </div>
-        </div>
-      </td>
-      <td align="center">
-        <button>
-          <img src="images/cctLogo.jpg" class="resumePics" id="myBtn7"></img>
-        </button>
-        <div id="myModal7" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              Cornell Club Tennis
-            </div>
-            <div class="modal-body">
-              <b>Position(s):</b> &nbsp;Treasurer (S20-present), Event Planner (S19-F19)</br>
-              <b>Club Member Since:</b> &nbsp;Fall 2018</br>
-              <b>Responsibilities:</b>
-              <ul>
-                <li>Manage the budget, all expenditures of the club, and all the funding of the club</li>
-                <li>Keep organized and up-to-date records of all transactions</li>
-                <li>Design and coordinate all social events for club members to attend, fostering community spirit t
-                  Attend team practices and tournaments, acquiring suggestions for future events from other
-                  members</li>
-              </ul>
-            </div>
-            <div class="modal-footer">
-              <a href="https://cornellclubtennis.weebly.com">https://cornellclubtennis.weebly.com</a>
-            </div>
-          </div>
-        </div>
-      </td>
-      <td align="center">
-        <button>
-          <img src="images/wiccLogo.jpg" class="resumePics" id="myBtn8"></img>
-        </button>
-        <div id="myModal8" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              Women in Computing at Cornell
-            </div>
-            <div class="modal-body">
-              <b>Position(s):</b> &nbsp;Corporate Committee (F19)</br>
-              <b>Club Member Since:</b> &nbsp;Fall 2018</br>
-              <b>Responsibilities:</b>
-              <ul>
-                <li>Serve as a liaison between corporate sponsors and WICC members during corporate events</li>
-                <li>Facilitated in the setup and clean up for each event</li>
-              </ul>
-            </div>
-            <div class="modal-footer">
-              <a href="https://wicc.cornell.edu">https://wicc.cornell.edu</a>
-            </div>
-          </div>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <button>
-          <img src="images/feelGoodLogo.jpg" class="resumePics" id="myBtn9"></img>
-        </button>
-        <div id="myModal9" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              FeelGood Cornell
-            </div>
-            <div class="modal-body">
-              <b>Position(s):</b> &nbsp;Education and Recruitment Chair (S19-F19)</br>
-              <b>Club Member:</b> &nbsp;Fall 2018-Fall2019</br>
-              <b>Responsibilities:</b>
-              <ul>
-                <li>Inform group members of meetings and delis through email bi-weekly newsletters</li>
-                <li>Gain real-world business experience and raise over $250 at each deli for the 2030 Fund</li>
-              </ul>
-            </div>
-            <div class="modal-footer">
-              <a href="https://www.feelgood.org">https://www.feelgood.org</a>
-            </div>
-          </div>
-        </div>
-      </td>
-      <td align="center">
+      </div>
+      <!-- <div class="sectionTitle">
+        Languages
+      </div>
+      <div class="sectionTitle">
+        Extracirculars
+      </div> -->
 
-      </td>
-      <td align="center">
+  </body>
 
-      </td>
-    </tr>
-  </table>
-
-  <script>
-    // Get the modal
-    var modal1 = document.getElementById("myModal1");
-    var modal2 = document.getElementById("myModal2");
-    var modal3 = document.getElementById("myModal3");
-    var modal4 = document.getElementById("myModal4");
-    var modal5 = document.getElementById("myModal5");
-    var modal6 = document.getElementById("myModal6");
-    var modal7 = document.getElementById("myModal7");
-    var modal8 = document.getElementById("myModal8");
-    var modal9 = document.getElementById("myModal9");
-    var modal10 = document.getElementById("myModal10");
-    var modal11 = document.getElementById("myModal11");
-    var modal12 = document.getElementById("myModal12");
-    var modal13 = document.getElementById("myModal13");
-
-    // Get the button that opens the modal
-    var btn1 = document.getElementById("myBtn1");
-    var btn2 = document.getElementById("myBtn2");
-    var btn3 = document.getElementById("myBtn3");
-    var btn4 = document.getElementById("myBtn4");
-    var btn5 = document.getElementById("myBtn5");
-    var btn6 = document.getElementById("myBtn6");
-    var btn7 = document.getElementById("myBtn7");
-    var btn8 = document.getElementById("myBtn8");
-    var btn9 = document.getElementById("myBtn9");
-    var btn10 = document.getElementById("myBtn10");
-    var btn11 = document.getElementById("myBtn11");
-    var btn12 = document.getElementById("myBtn12");
-    var btn13 = document.getElementById("myBtn13");
-
-    // Get the <span> element that closes the modal
-    var span10 = document.getElementsByClassName("close")[0];
-    var span11 = document.getElementsByClassName("close")[1];
-    var span12 = document.getElementsByClassName("close")[2];
-    var span1 = document.getElementsByClassName("close")[4];
-    var span2 = document.getElementsByClassName("close")[5];
-    var span3 = document.getElementsByClassName("close")[6];
-    var span4 = document.getElementsByClassName("close")[7];
-    var span5 = document.getElementsByClassName("close")[8];
-    var span6 = document.getElementsByClassName("close")[9];
-    var span7 = document.getElementsByClassName("close")[10];
-    var span8 = document.getElementsByClassName("close")[11];
-    var span9 = document.getElementsByClassName("close")[12];
-    var span13 = document.getElementsByClassName("close")[3];
-
-
-    // When the user clicks on the button, open the modal 
-    btn1.onclick = function () {
-      modal1.style.display = "block";
-    }
-    btn2.onclick = function () {
-      modal2.style.display = "block";
-    }
-    btn3.onclick = function () {
-      modal3.style.display = "block";
-    }
-    btn4.onclick = function () {
-      modal4.style.display = "block";
-    }
-    btn5.onclick = function () {
-      modal5.style.display = "block";
-    }
-    btn6.onclick = function () {
-      modal6.style.display = "block";
-    }
-    btn7.onclick = function () {
-      modal7.style.display = "block";
-    }
-    btn8.onclick = function () {
-      modal8.style.display = "block";
-    }
-    btn9.onclick = function () {
-      modal9.style.display = "block";
-    }
-    btn10.onclick = function () {
-      modal10.style.display = "block";
-    }
-    btn11.onclick = function () {
-      modal11.style.display = "block";
-    }
-    btn12.onclick = function () {
-      modal12.style.display = "block";
-    }
-    btn13.onclick = function () {
-      modal13.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span1.onclick = function () {
-      modal1.style.display = "none";
-      modal1.style.display = "none";
-    }
-    span2.onclick = function () {
-      modal2.style.display = "none";
-      modal2.style.display = "none";
-    }
-    span3.onclick = function () {
-      modal3.style.display = "none";
-      modal3.style.display = "none";
-    }
-    span4.onclick = function () {
-      modal4.style.display = "none";
-      modal4.style.display = "none";
-    }
-    span5.onclick = function () {
-      modal5.style.display = "none";
-      modal5.style.display = "none";
-    }
-    span6.onclick = function () {
-      modal6.style.display = "none";
-      modal6.style.display = "none";
-    }
-    span7.onclick = function () {
-      modal7.style.display = "none";
-      modal7.style.display = "none";
-    }
-    span8.onclick = function () {
-      modal8.style.display = "none";
-      modal8.style.display = "none";
-    }
-    span9.onclick = function () {
-      modal9.style.display = "none";
-      modal9.style.display = "none";
-    }
-    span10.onclick = function () {
-      modal10.style.display = "none";
-      modal10.style.display = "none";
-    }
-    span11.onclick = function () {
-      modal11.style.display = "none";
-      modal11.style.display = "none";
-    }
-    span12.onclick = function () {
-      modal12.style.display = "none";
-      modal12.style.display = "none";
-    }
-    span13.onclick = function () {
-      modal13.style.display = "none";
-      modal13.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target == modal1) {
-        modal1.style.display = "none";
-      } if (event.target == modal2) {
-        modal2.style.display = "none";
-      } if (event.target == modal3) {
-        modal3.style.display = "none";
-      } if (event.target == modal4) {
-        modal4.style.display = "none";
-      } if (event.target == modal5) {
-        modal5.style.display = "none";
-      } if (event.target == modal6) {
-        modal6.style.display = "none";
-      } if (event.target == modal7) {
-        modal7.style.display = "none";
-      } if (event.target == modal8) {
-        modal8.style.display = "none";
-      } if (event.target == modal9) {
-        modal9.style.display = "none";
-      } if (event.target == modal10) {
-        modal10.style.display = "none";
-      } if (event.target == modal11) {
-        modal11.style.display = "none";
-      } if (event.target == modal12) {
-        modal12.style.display = "none";
-      } if (event.target == modal13) {
-        modal13.style.display = "none";
-      }
-    }
-  </script>
-
-</body>
+</div>
 
 </html>
