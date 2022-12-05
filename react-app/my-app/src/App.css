@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  background-color: #80D8E4;
+}
+
+.font {
+  font-family: 'Courier New';
+  font-size: 60px;
+  color: white;
+}
+
+.App-header {
+  height: 20%;
+  /* background-color: #80D8E4; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;  
+}
+
+.App-body {
+  height: 65%;
+  /* background-color: #80D8E4; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;   */
+}
+
+.App-footer {
+  height: 15%;
+  /* background-color: #80D8E4; */
+}
